@@ -13,7 +13,7 @@ app.on('ready', () => {
       backgroundThrottling: false
     }
   });
-  MainWindow.loadURL(`${__dirname}/src/index.html`);
+  MainWindow.loadURL(`file://${__dirname}/src/index.html`);
 });
 
 ipcMain.on('videos:added', (event, videos) => {
